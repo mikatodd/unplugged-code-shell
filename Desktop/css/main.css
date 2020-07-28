@@ -110,6 +110,14 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.25em;
@@ -178,7 +186,7 @@ header .content-wrapper {
 
 header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
@@ -189,7 +197,7 @@ header nav {
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -232,6 +240,10 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url('../img/unplugged-retreat.jpg');
+  background-size: cover; 
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -257,18 +269,24 @@ aside {
 /* Features */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
 }
 
 .features h2 {
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .features article {
-  width: 63%;
   margin: 30px 0;
+  
 }
 
 .features .features-item-description {
@@ -279,7 +297,10 @@ aside {
 }
 
 .features p {
-  margin: 0;
+  margin: 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -294,10 +315,10 @@ aside {
 
 .reviews h1 {
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .reviews h2 {
-  width: 50%;
   margin: 20px 0;
   line-height: 1;
 }
